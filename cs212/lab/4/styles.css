@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 body {
     background-color: #8B4513; /* SaddleBrown */
     display: flex;
@@ -18,7 +19,7 @@ body {
     border: 1px solid #dcd9c6;
     margin: auto;
     color: #333;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Cedarville Cursive', cursive;
     line-height: 1.6;
     text-align: justify;
 }
