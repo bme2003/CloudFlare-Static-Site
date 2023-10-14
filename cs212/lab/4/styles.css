@@ -9,7 +9,7 @@ body {
 
 .paper {
     background-color: #f8f0e3; /* Paper color */
-    background-image: url('path-to-your-texture.jpg'); /* Replace with texture path */
+    background-image: url('paper.jpg');
     background-repeat: repeat;
     width: 80%;
     max-width: 800px;
