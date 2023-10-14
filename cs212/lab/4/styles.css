@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 body {
     background-color: #8B4513; /* SaddleBrown */
     display: flex;
@@ -19,7 +19,7 @@ body {
     border: 1px solid #dcd9c6;
     margin: auto;
     color: #333;
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Dancing Script', cursive;
     line-height: 1.6;
     text-align: justify;
 }
