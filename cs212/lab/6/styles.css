@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu main ad"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-sidebar {
+    grid-area: menu;
+    background: #f4f4f4;
+    padding: 15px;
+}
+
+.menu-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 20px;
+    background: #fff;
+}
+
+.advertisement {
+    grid-area: ad;
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
