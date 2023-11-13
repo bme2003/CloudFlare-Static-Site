@@ -1,43 +1,51 @@
 body {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "nav main ad"
-    "footer footer footer";
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 200px 1fr 200px;
     grid-template-rows: auto 1fr auto;
-    gap: 10px;
-    height: 100vh;
-}
-
-header, nav, main, section, footer {
-    padding: 10px;
-    border: 1px solid black;
+    grid-template-areas:
+        "header header header"
+        "sidebar content advertisement"
+        "footer footer footer";
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
     grid-area: header;
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
-nav {
-    grid-area: nav;
+sidebar {
+    grid-area: sidebar;
+    background-color: grey;
+    padding: 10px;
 }
 
-main {
-    grid-area: main;
+.content {
+    grid-area: content;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    background-color: grey;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
 }
 
-section {
-    grid-area: ad;
+advertisement {
+    grid-area: advertisement;
+    text-align: center;
+    padding: 10px;
 }
 
 footer {
     grid-area: footer;
-}
-
-a {
-    display: block;
-    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
