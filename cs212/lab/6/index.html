@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Holy Grail Layout</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Page Title</h1>
+        <h1>
+            Welcome to our website!
+        </h1>
     </header>
-    <nav>
-        <h2>About Me</h2>
-        <p>Some information about you...</p>
-    </nav>
-    <main>
-        <h2>Guessing Game</h2>
-        <input type="number" id="guessInput" placeholder="Enter a number">
-        <button id="guessButton">Guess</button>
-        <div id="result"></div>
+
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#our-mission">Our Mission</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact-info">Contact Info</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div id="interactive-component">
+            <input type="text" id="input-text" placeholder="Enter your name">
+            <button onclick="displayGreeting()">Show Greeting</button>
+            <div id="greeting-message"></div>
+        </div>
     </main>
-    <section>
+
+    <div class="advertisement">
         <a href="amazon.com/ZimaBoard-Computer-Personal-Network-Attached/dp/B0BKL7YPBQ?th=1" target="_blank">
-            <img src="zima.jpg" alt="Advertisement">
+            <img src="zima.jpg" width="200" height="200">
+             <alt="Advertisement">
         </a>
-    </section>
+    </div>
+
     <footer>
-        <h2>Addendum</h2>
-        <p>This is a simple guessing game...</p>
+        <div class="addendum">
+            <p>
+                Change Me Brody.
+            </p>
+            
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
