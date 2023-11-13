@@ -1,53 +1,43 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.grid-container {
+body {
     display: grid;
-    grid-template-areas:
-        "header header header"
-        "sidebar-left main sidebar-right"
-        "footer footer footer";
+    grid-template-areas: 
+    "header header header"
+    "nav main ad"
+    "footer footer footer";
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto 1fr auto;
+    gap: 10px;
     height: 100vh;
+}
+
+header, nav, main, section, footer {
+    padding: 10px;
+    border: 1px solid black;
 }
 
 header {
     grid-area: header;
-    background: #333;
-    color: white;
     text-align: center;
-    padding: 10px;
 }
 
-.sidebar-left, .sidebar-right {
-    background: #f4f4f4;
-    padding: 15px;
+nav {
+    grid-area: nav;
 }
 
-.sidebar-left {
-    grid-area: sidebar-left;
-}
-
-.sidebar-right {
-    grid-area: sidebar-right;
-}
-
-.main-content {
+main {
     grid-area: main;
-    padding: 20px;
-    background: #fff;
+}
+
+section {
+    grid-area: ad;
 }
 
 footer {
     grid-area: footer;
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+}
+
+a {
+    display: block;
+    margin-bottom: 10px;
 }
 
