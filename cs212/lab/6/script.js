@@ -1,16 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const submitGuess = document.getElementById('submitGuess');
-    const result = document.getElementById('result');
-    let secretNumber = Math.floor(Math.random() * 100) + 1;
+document.addEventListener('DOMContentLoaded', () => {
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let guesses = 0;
 
-    submitGuess.onclick = function() {
-        let userGuess = parseInt(document.getElementById('guess').value);
-        if (userGuess === secretNumber) {
-            result.textContent = 'Congratulations! You guessed right!';
-        } else if (userGuess < secretNumber) {
-            result.textContent = 'Too low. Try again!';
+    document.querySelector('#guessButton').addEventListener('click', () => {
+        const userGuess = parseInt(document.querySelector('#guessInput').value);
+        guesses++;
+        let result = '';
+        if (userGuess === randomNumber) {
+            result = `Correct! It took you ${guesses} guesses.`;
+        } else if (userGuess < randomNumber) {
+            result = 'Too low!';
         } else {
-            result.textContent = 'Too high. Try again!';
+            result = 'Too high!';
         }
-    };
+        document.querySelector('#result').textContent = result;
+    });
 });
+
